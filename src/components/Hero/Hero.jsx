@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   let greetings = [
@@ -36,12 +37,18 @@ export default function Hero() {
         hesitate to reach out—I'd love to hear from you. Enjoy exploring!
       </p>
       <div className="flex flex-col justify-between gap-3 sm:flex-row">
-        <button className="rounded-full bg-sky-500 px-5 py-2 font-bold">
+        <Link
+          to={"/projects"}
+          className="rounded-full bg-sky-500 px-5 py-2 font-bold"
+        >
           Explore Portfolio
-        </button>
-        <button className="rounded-full border border-pink-500 px-5 py-2 font-bold hover:bg-pink-500">
+        </Link>
+        <Link
+          to={"/contacts"}
+          className="rounded-full border border-pink-500 px-5 py-2 font-bold hover:bg-pink-500"
+        >
           Get In Touch
-        </button>
+        </Link>
       </div>
     </div>
   );
