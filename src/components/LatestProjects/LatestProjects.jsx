@@ -43,7 +43,7 @@ export default function LatestProjects() {
             return (
               <button
                 key={index}
-                className={`h-3 w-3 rounded-full border bg-transparent ${
+                className={`h-3 w-3 rounded-full border bg-transparent lg:h-4 lg:w-4 ${
                   selectedIndex === index
                     ? "bg-gradient-to-br from-sky-500 to-pink-500"
                     : "bg-transparent"
