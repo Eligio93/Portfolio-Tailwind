@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import App from "./App";
 import "./index.css";
+import ProjectDetail from "./components/Projects/ProjectDetail";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/contacts",
     element: <Contacts />,
+  },
+  {
+    path: "/projects/:projectId",
+    element: <ProjectDetail />,
   },
 ]);
 
