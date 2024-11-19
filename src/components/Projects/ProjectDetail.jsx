@@ -45,7 +45,7 @@ export default function ProjectDetail() {
         </section>
         <section className="flex flex-col gap-5">
           <h2 className="font-bold text-gray-500">Developed with</h2>
-          <div className="flex flex-wrap items-center justify-around gap-5 lg:justify-start lg:gap-8">
+          <div className="flex flex-wrap items-center justify-around gap-5 lg:justify-start lg:gap-8 lg:justify-evenly ">
             {project["tech-stack"].map((tech) => {
               return (
                 <div
