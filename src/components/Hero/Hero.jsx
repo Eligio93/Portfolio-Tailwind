@@ -45,7 +45,7 @@ export default function Hero() {
         </Link>
         <Link
           to={"/contacts"}
-          className="rounded-full border border-pink-500 px-5 py-2 font-bold hover:bg-pink-500"
+          className="rounded-full border border-pink-500 px-5 py-2 font-bold transition-colors hover:bg-pink-500"
         >
           Get In Touch
         </Link>
