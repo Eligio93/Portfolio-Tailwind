@@ -55,19 +55,24 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="flex flex-col gap-5 p-3 lg:gap-10">
-      <h2 className="text-center text-4xl font-bold text-white md:text-left lg:mb-5">
+    <section className="flex flex-col items-center gap-5 p-3 lg:gap-10">
+      <h2 className="text-center text-4xl font-bold text-white md:text-left lg:mb-5 lg:self-start">
         Tech Stack
       </h2>
 
-      <div className="flex flex-wrap justify-around gap-5">
+      <div className="flex flex-wrap justify-around gap-5 lg:max-w-[40%] lg:gap-10">
         {technologies.map((tech) => (
           <div
             key={tech.name}
-            className="flex max-w-16 flex-col items-center gap-3 lg:max-w-20 "
+            className="flex max-w-16 flex-col items-center gap-3 lg:max-w-20"
           >
             <div>
-              <img src={tech.icon} alt={tech.name} />
+              <img
+                className="transition duration-300 lg:grayscale lg:hover:scale-110 lg:hover:drop-shadow-md lg:hover:grayscale-0"
+                src={tech.icon}
+                alt={tech.name}
+                title={tech.name}
+              />
             </div>
             <p className="text-md text-white lg:text-lg">{tech.name}</p>
           </div>
