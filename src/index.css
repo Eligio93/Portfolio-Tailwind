@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.is-in-view.is-snapped {
+  @apply opacity-100;
+}
+.is-in-view {
+  @apply opacity-35;
+}
+hr {
+  @apply h-0.5 border-none bg-gradient-to-tr from-sky-500 to-pink-500;
+}
