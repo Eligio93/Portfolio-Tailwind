@@ -13,7 +13,10 @@ export default function ProjectCard({ project }) {
           className="max-h-[150px] w-full object-contain sm:self-end"
         />
       </div>
-      <Link to={`/projects/${project.title}`} className="flex flex-col gap-5 flex-1 ">
+      <Link
+        to={`/projects/${project.title}`}
+        className="flex flex-1 flex-col gap-5 hover:underline"
+      >
         <h3 className="sm text-center text-2xl font-bold">{project.title}</h3>
         <p className="text-md line-clamp-5 items-center lg:line-clamp-4">
           {project.description}
