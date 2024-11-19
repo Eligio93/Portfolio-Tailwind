@@ -7,7 +7,5 @@ export default {
     },
     extend: {},
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
+  plugins: [require("tailwindcss-animated")],
 };
