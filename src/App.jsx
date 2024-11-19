@@ -8,8 +8,9 @@ import astronautImage from "./assets/astronaut.png";
 import { Link } from "react-router-dom";
 
 export default function App() {
+  window.scrollTo(0, 0);
   return (
-    <div className="scrollbar-hidden flex flex-col gap-5 rounded-lg p-3 md:p-5">
+    <div className="flex flex-col gap-5 rounded-lg p-3 md:p-5">
       <Header />
       <Hero />
       <hr />
