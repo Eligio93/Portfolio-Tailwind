@@ -65,7 +65,7 @@
         "desktop-image": "/portfolioD.png",
         "mobile-image": "/portfolioM.png",
         "gitHub": "https://github.com/Eligio93/portfolio",
-        "live": "https://google.com/"
+        "live": "https://ec-webdev.netlify.app/"
     },
     {
         "title": "EC Blog",
