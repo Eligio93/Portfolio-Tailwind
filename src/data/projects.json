@@ -24,10 +24,48 @@
                 "icon": "/nextJsIcon.svg"
             }
         ],
+        "readMe": {
+            "description": "The FromPuglia travel blog is a comprehensive web project designed to showcase the beauty and unique experiences of the Puglia region. Developed using Next.js, this project embodies modern web development practices to ensure optimal performance and user experience. The content management is seamlessly handled through Contentful, a robust CMS, which integrates with the frontend via REST APIs and built-in methods. This integration facilitates dynamic content updates and provides a scalable solution for managing various types of media and articles. The combination of Next.js and Contentful allows for a flexible, fast-loading, and SEO-optimized platform, perfect for engaging travel enthusiasts and visitors.",
+            "Development Challenges and Learning Process": "Throughout the development of the FromPuglia travel blog, several key challenges required significant learning and adaptation. Initially, one of the most substantial hurdles was understanding the intricacies of Next.js, particularly mastering the App Router and the Route Handler. These aspects demanded a deep dive into Next.js documentation and practical experimentation to ensure proper routing and data management. Another critical learning process involved integrating Contentful and familiarizing with its capabilities and limitations. Establishing a seamless connection between the CMS and the frontend using REST APIs required troubleshooting and problem-solving to maintain data flow and ensure dynamic content updates. The implementation of the login functionality, although not published, was another demanding part of the project. This feature was built using NextAuth.js for authentication, combined with React’s Context API for state management, which was complex and required understanding how to share state efficiently across components. Styling presented its own set of challenges, especially when considering scalability and the potential for future feature additions. Ensuring the website remained visually appealing and maintained consistent UI/UX standards required strategic planning. Additionally, making the website responsive for various devices added another layer of complexity, necessitating the application of modern CSS techniques and frameworks to provide a smooth, adaptive user experience. These experiences not only expanded technical knowledge but also strengthened problem-solving skills, contributing to a well-rounded web development expertise.",
+            "Conclusion": "The FromPuglia project stands out as one of the most comprehensive projects I have undertaken. It has been an invaluable learning experience that allowed me to make and learn from numerous mistakes, each contributing to my growth as a developer. This project deepened my understanding of server-side rendering and the intricacies of SEO implementation, essential for building a high-performing and discoverable site. Additionally, FromPuglia was my first project to be published using a custom domain, marking a significant milestone in my development journey. The deployment process was streamlined through Vercel, which made launching the application straightforward and user-friendly. Overall, this project has not only reinforced my technical skills but also instilled confidence in my ability to manage complex web development tasks from start to finish"
+        },
+        "mainImage": "/fromPuglia.png",
         "desktop-image": "/FromPugliaD.png",
         "mobile-image": "/FromPugliaM.png",
-        "gitHub":"https://github.com/Eligio93/puglia-escape",
-        "live":"https://frompuglia.com/"
+        "gitHub": "https://github.com/Eligio93/puglia-escape",
+        "live": "https://frompuglia.com/"
+    },
+    {
+        "title": "Personal Portfolio",
+        "description": "This project serves as my personal portfolio, showcasing the various projects I’ve worked on and the diverse technologies I use in my development process. It’s a living project that I actively maintain and update, with plans to expand and enhance it in the future to make it even more comprehensive. My goal is to keep it as a dynamic representation of my growth and expertise as a developer",
+        "tech-stack": [
+            {
+                "name": "HTML",
+                "icon": "/htmlIcon.svg"
+            },
+            {
+                "name": "Tailwind",
+                "icon": "/tailwindIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/javascriptIcon.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/reactIcon.svg"
+            }
+        ],
+        "readMe": {
+            "description": "This project serves as my personal portfolio, showcasing the various projects I’ve worked on and the diverse technologies I use in my development process. It’s a living project that I actively maintain and update, with plans to expand and enhance it in the future to make it even more comprehensive. My goal is to keep it as a dynamic representation of my growth and expertise as a developer",
+            "Development Challenges and Learning Process": "For the first time in a while, after feeling dissatisfied with my designs, I decided to approach this project using Tailwind CSS instead of traditional CSS. This shift proved to be a game-changer in terms of development efficiency. One of the most noticeable advantages was achieving a much smoother, more consistent transition between mobile and larger devices. Tailwind also gave me greater control over individual components without the need to spend time coming up with unique class names. Additionally, I explored Tailwind-specific libraries like Tailwind CSS Animated and integrated Frame Motion for animations, which added a polished, dynamic feel to the project. This combination allowed me to streamline the design process while enhancing the overall user experience.",
+            "Conclusion": "This project has convinced me to use Tailwind CSS for most of my future work, as it provides greater control over design, especially for someone like me who isn’t a design expert. Its flexibility and efficiency make it a perfect fit for my development process. I plan to continuously update this portfolio with new projects and effects as my skills improve, making it more visually appealing over time. This will not only showcase my growth as a developer but also help me stay competitive in the ever-evolving market."
+        },
+        "mainImage": "/PortfolioMain.png",
+        "desktop-image": "/portfolioD.png",
+        "mobile-image": "/portfolioM.png",
+        "gitHub": "https://github.com/Eligio93/portfolio",
+        "live": "https://google.com/"
     },
     {
         "title": "EC Blog",
@@ -66,15 +104,14 @@
                 "icon": "/viteIcon.svg"
             }
         ],
+        "mainImage": "/ecBlog.png",
         "desktop-image": "/blogAPID.png",
         "mobile-image": "/blogAPIM.png",
-        "readMe": [
-            {
-                "description": "",
-                "struggles": "",
-                "conclusion": ""
-            }
-        ],
+        "readMe": {
+            "description": "EcBlog is a full-stack application that includes two front ends and one backend. The two front ends are the client side, which is the actual blog open to everyone where various articles are present, and users can leave comments after registering. The other front end is the CMS side, which is reserved for blog administration where it is possible to edit, publish, feature, and delete articles and comments.",
+            "Struggles": "The first real obstacle was understanding and not getting confused between authentication with Passport Local, used together with Passport JWT Strategy to manage authorization for various server routes and make API calls. Once I understood this mechanism, I saved the JWT token in localStorage and used a Context in React to manage the user access on the front end. I used the same strategy for both the client and the CMS, but despite everything working perfectly on the client side, I have problems with the CMS. When the page is refreshed, the user loses access even though the token is still present in localStorage. I plan to revisit this bug in the future to resolve it. Another difficulty I encountered was using Cloudinary for saving images for each post. I used this service to avoid burdening the database with multiple images, saving only the links pointing to Cloudinary instead. Lastly, I also used TinyMCE as an editor for writing the body of each post. I noticed that the editor has many features, but I decided to use it in a basic way to avoid further complicating the project.",
+            "Conclusion": "After completing this project, I finally feel like I have created something that can be used in the real world. During development, I had many ideas on how to add functionalities and other features to my application, and I learned a lot about RESTful APIs, the server, and it was very useful to review React once again. This was my first real full-stack application, and I am happy with the result, even though I would like to go back and improve its graphical appearance."
+        },
         "gitHub": "https://github.com/Eligio93/BlogAPI",
         "live": "https://ec-blogapi.netlify.app/"
     },
@@ -107,15 +144,14 @@
                 "icon": "/expressIcon.svg"
             }
         ],
+        "mainImage": "/inventoryApp.png",
         "desktop-image": "/inventoryAppD.png",
         "mobile-image": "/inventoryAppM.png",
-        "readMe": [
-            {
-                "description": "",
-                "struggles": "",
-                "conclusion": ""
-            }
-        ],
+        "readMe": {
+            "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator. The app is been deployed using Railway",
+            "Struggles": "Certainly, the biggest challenges in the entire project were related to structuring the routes and the various controllers to handle different requests to the database. Additionally, I used PUG for the first time, which initially required a bit of a learning curve but eventually proved to be straightforward and easy to use",
+            "Conclusion": "In conclusion, I really enjoyed working on this project as it allowed me to gain more confidence in using a database and sharpened my skills with Mongoose commands. It was a rewarding experience that not only strengthened my technical abilities but also enhanced my overall understanding of backend development"
+        },
         "gitHub": "https://github.com/Eligio93/inventory-app",
         "live": "https://ec-inventory-app.up.railway.app/"
     },
@@ -144,15 +180,14 @@
                 "icon": "/viteIcon.svg"
             }
         ],
+        "mainImage": "/shoppingCart.png",
         "desktop-image": "/shoppingCartD.png",
         "mobile-image": "/shoppingCartM.png",
-        "readMe": [
-            {
-                "description": "The goal of this project was to develop a mini e-commerce platform utilizing React's router. The main objective was to create an interface where users could browse products fetched from a faux catalog through API calls. Alongside this functionality, users should have the ability to dynamically add and remove items from their shopping cart. Additionally, I took the opportunity to implement responsiveness for the first time, ensuring the site adapts seamlessly to various screen sizes.",
-                "struggles": "I encountered the most difficulty with using the router, particularly in figuring out how to structure the components. Initially, I struggled with deciding whether to place all components as children of a main directory or to create separate directories for each individual page. Additionally, I found that passing props to deeply nested components could become a tedious and repetitive task. This is something I plan to examine further for future projects, as it can impact code organization and efficiency.",
-                "conclusion": "I really enjoyed watching this project evolve into something that can finally be considered a real-world project. I've gained a lot more proficiency with React and its functionalities, and I believe I've done a good job with responsiveness, which I had never implemented before.In the project, I still need to implement the input validation part, thus not allowing the user to enter quantities less than 1 for each selected product."
-            }
-        ],
+        "readMe": {
+            "description": "The goal of this project was to create a mini e-commerce platform using React's router. The main focus was to develop an interface where users could browse products fetched from a mock API catalog and easily add or remove items from their shopping cart. This project also gave me the chance to work on responsiveness for the first time, ensuring the site adapts smoothly to different screen sizes.",
+            "Struggles": "One of the biggest challenges I faced was working with React Router, particularly when it came to structuring the components. I struggled to decide whether to organize all components under a single main directory or to create separate directories for each page. Another challenge was passing props to deeply nested components, which quickly became repetitive and inefficient. This is an area I plan to explore further in future projects to improve both code organization and scalability.",
+            "Conclusion": "Overall, I really enjoyed watching this project come to life and evolve into something that feels like a real-world application. It helped me significantly improve my skills with React, particularly in areas like routing and responsiveness. While I'm proud of the progress I made, there’s still room for improvement. For instance, I need to implement input validation to prevent users from entering quantities less than one for any product. Despite these minor gaps, this project was a great learning experience that boosted my confidence in front-end development."
+        },
         "gitHub": "https://github.com/Eligio93/shopping-cart",
         "live": "https://ec-shoppingcart.netlify.app/"
     },
@@ -181,15 +216,14 @@
                 "icon": "/viteIcon.svg"
             }
         ],
+        "mainImage": "/cvGenerator.png",
         "desktop-image": "/cvGeneratorD.png",
         "mobile-image": "/cvGeneratorM.png",
-        "readMe": [
-            {
-                "description": "Embarking on my first React project, I am developing a web application that allows users to effortlessly create and manage their CVs. The user-friendly interface features dynamic forms for inputting personal details. Users can easily edit or delete information based on their preferences, providing flexibility and control. The goal is to deliver a seamless and visually appealing experience, empowering users to craft and refine their professional profiles with ease.",
-                "struggles": "Initially, I struggled with understanding how to use a single function to handle each component of the application and effectively target them using IDs and values (refer to line 33 in App.jsx). Subsequently, my primary challenge, which was also the main goal of the project, was figuring out how to use props and lift state to facilitate communication between different components. While my code works, it feels somewhat repetitive. The same goes for states; I grasped their general structure and purpose, but at times, I found myself getting lost in the React DOM tree among various components. I believe the project has been executed correctly, but there's certainly room for further optimization.",
-                "conclusion": "This project has been enjoyable for me as it provided a preliminary glimpse into the capabilities of React. I am pleased with the overall validity and functionality of my project. Additionally, I incorporated a couple of extra features – printing and downloading the CV – which allowed me to delve into print media queries and document download functions. This involved installing packages such as html2canvas and jspdf, broadening my understanding of additional tools and functionalities within the React ecosystem."
-            }
-        ],
+        "readMe": {
+            "description": "Embarking on my first React project, I am developing a web application that allows users to effortlessly create and manage their CVs. The user-friendly interface features dynamic forms for inputting personal details. Users can easily edit or delete information based on their preferences, providing flexibility and control. The goal is to deliver a seamless and visually appealing experience, empowering users to craft and refine their professional profiles with ease.",
+            "Struggles": "Initially, I struggled with understanding how to use a single function to handle each component of the application and effectively target them using IDs and values (refer to line 33 in App.jsx). Subsequently, my primary challenge, which was also the main goal of the project, was figuring out how to use props and lift state to facilitate communication between different components. While my code works, it feels somewhat repetitive. The same goes for states; I grasped their general structure and purpose, but at times, I found myself getting lost in the React DOM tree among various components. I believe the project has been executed correctly, but there's certainly room for further optimization.",
+            "Conclusion": "This project has been enjoyable for me as it provided a preliminary glimpse into the capabilities of React. I am pleased with the overall validity and functionality of my project. Additionally, I incorporated a couple of extra features – printing and downloading the CV – which allowed me to delve into print media queries and document download functions. This involved installing packages such as html2canvas and jspdf, broadening my understanding of additional tools and functionalities within the React ecosystem."
+        },
         "gitHub": "https://github.com/Eligio93/CV-application",
         "live": "https://ec-cv-application.netlify.app/"
     },
@@ -218,15 +252,14 @@
                 "icon": "/viteIcon.svg"
             }
         ],
+        "mainImage": "/memoryCard.png",
         "desktop-image": "/memoryCardD.png",
         "mobile-image": "/memoryCardM.png",
-        "readMe": [
-            {
-                "description": "In this project, I had to develop a memory card game. The rule of the game is not to click on a card more than once. Each time you click on a card, the score increases, also recording the best score until you click on all the cards. In that case, you win the game",
-                "struggles": "I managed to develop this game without major difficulties. However, I had to use the useEffect hook in React for the first time along with an API call. I also spent a lot of time on styling the entire project, including positioning the cards and adapting the images from the API call.",
-                "conclusion": "I enjoyed developing this game as it provided me with additional practice with React components and hooks. Furthermore, it was helpful to review API call handling. Generally, the project is quite responsive in terms of content placement, such as the positioning of the cards. However, I think I will revisit the header and footer for usability on devices with smaller screens."
-            }
-        ],
+        "readMe": {
+            "description": "In this project, I had to develop a memory card game. The rule of the game is not to click on a card more than once. Each time you click on a card, the score increases, also recording the best score until you click on all the cards. In that case, you win the game",
+            "Struggles": "I managed to develop this game without major difficulties. However, I had to use the useEffect hook in React for the first time along with an API call. I also spent a lot of time on styling the entire project, including positioning the cards and adapting the images from the API call.",
+            "Conclusion": "I enjoyed developing this game as it provided me with additional practice with React components and hooks. Furthermore, it was helpful to review API call handling. Generally, the project is quite responsive in terms of content placement, such as the positioning of the cards. However, I think I will revisit the header and footer for usability on devices with smaller screens."
+        },
         "gitHub": "https://github.com/Eligio93/memory-card",
         "live": "https://ec-memorycard.netlify.app/"
     },
@@ -251,15 +284,14 @@
                 "icon": "/webpackIcon.svg"
             }
         ],
+        "mainImage": "/weatherApp.png",
         "desktop-image": "/weatherAppD.png",
         "mobile-image": "/weatherAppM.png",
-        "readMe": [
-            {
-                "description": "The purpose of this project was to build a weather app, incorporating asynchronous functions and APIs for the first time. After fetching the data, the goal was to create an object containing only the necessary information and display these city-specific details to the user.",
-                "struggles": "Initially, this project might have seemed straightforward, but I faced several challenges in deciding on the project's structure. Where should I place the right functions in modules? How many functions do I need to display the data? Is one function enough, or do I need a different function for each section of the project to show the data? A second difficulty was handling API calls, data fetching, and promises. It felt like I was using data fetching more than necessary, and I encountered some difficulties in handling fetch-related errors. Later, I realized that the forecast fetch also contained data related to the input city, so I could have constructed the object based solely on that call. The last point where I encountered problems was adding EventListeners to the buttons in the document. Managing a button that invokes a dynamically created asynchronous function was quite complicated. I resolved it by adding the event listener in the same function that creates the button, but event delegation could have also been used.",
-                "conclusion": "This project helped me understand and practice asynchronous functions and promises. Additionally, it was interesting and enjoyable to use API calls for the first time."
-            }
-        ],
+        "readMe": {
+            "description": "The purpose of this project was to build a weather app, incorporating asynchronous functions and APIs for the first time. After fetching the data, the goal was to create an object containing only the necessary information and display these city-specific details to the user.",
+            "Struggles": "Initially, this project might have seemed straightforward, but I faced several challenges in deciding on the project's structure. Where should I place the right functions in modules? How many functions do I need to display the data? Is one function enough, or do I need a different function for each section of the project to show the data? A second difficulty was handling API calls, data fetching, and promises. It felt like I was using data fetching more than necessary, and I encountered some difficulties in handling fetch-related errors. Later, I realized that the forecast fetch also contained data related to the input city, so I could have constructed the object based solely on that call. The last point where I encountered problems was adding EventListeners to the buttons in the document. Managing a button that invokes a dynamically created asynchronous function was quite complicated. I resolved it by adding the event listener in the same function that creates the button, but event delegation could have also been used.",
+            "Conclusion": "This project helped me understand and practice asynchronous functions and promises. Additionally, it was interesting and enjoyable to use API calls for the first time."
+        },
         "gitHub": "https://github.com/Eligio93/weather-app",
         "live": "https://ec-weather.netlify.app/"
     }
