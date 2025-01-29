@@ -9,6 +9,7 @@ import gitIcon from "/gitIconFooter.svg";
 import mongoDbIcon from "/mongoDbIcon.svg";
 import nodeIcon from "/nodeIcon.svg";
 import nextJsIcon from "/nextJsIcon.svg";
+import typescripticon from "/typescriptIcon.svg";
 
 export default function TechStack() {
   const technologies = [
@@ -31,6 +32,10 @@ export default function TechStack() {
     {
       name: "React",
       icon: reactIcon,
+    },
+    {
+      name: "Typescript",
+      icon: typescripticon,
     },
     {
       name: "Tailwind",
