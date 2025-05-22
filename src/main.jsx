@@ -7,6 +7,7 @@ import App from "./App";
 import "./index.css";
 import ProjectDetail from "./components/Projects/ProjectDetail";
 import { useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import ReactGA from "react-ga4";
 const MEASUREMENT_ID = "G-3X3P6JDK22";
