@@ -20,41 +20,40 @@ function PageViewTracker() {
   return null;
 }
 
-const router = createBrowserRouter(
+function Layout() {
+  return (
+    <>
+      <PageViewTracker />
+      <Outlet />
+    </>
+  );
+}
+
+export const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <App />,
-    },
-    ,
-    {
-      path: "/projects",
-      element: <Projects />,
-    },
-    {
-      path: "/contacts",
-      element: <Contacts />,
-    },
-    {
-      path: "/projects/:projectId",
-      element: <ProjectDetail />,
+      element: <Layout />,
+      children: [
+        { index: true, element: <App /> },
+        { path: "projects", element: <Projects /> },
+        { path: "contacts", element: <Contacts /> },
+        { path: "projects/:projectId", element: <ProjectDetail /> },
+      ],
     },
   ],
   {
     future: {
-      v7_relativeSplatPath: true,
-      v7_startTransition: true,
-      v7_fetcherPersist: true,
       v7_normalizeFormMethod: true,
       v7_partialHydration: true,
+      v7_relativeSplatPath: true,
+      v7_fetcherPersist: true,
+      v7_startTransition: true,
     },
   },
 );
-
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}>
-      <PageViewTracker />
-    </RouterProvider>
+    <RouterProvider router={router} />
   </StrictMode>,
 );
