@@ -1,5 +1,44 @@
 [
     {
+        "title": "Surfweek",
+        "description": "Surfweek is a modern web platform for a surf travel and lifestyle brand. The project was built with Next.js and TypeScript for the frontend, while the backend was powered by Strapi as a headless CMS with a PostgreSQL database. The application was deployed on Render, and the UI was designed with Chakra UI to ensure a clean, responsive, and user-friendly experience",
+        "tech-stack": [
+            {
+                "name": "HTML",
+                "icon": "/htmlIcon.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "/cssIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/javascriptIcon.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/reactIcon.svg"
+            },
+            {
+                "name": "Nextjs",
+                "icon": "/nextJsIcon.svg"
+            },
+            {
+                "name": "Typescript",
+                "icon": "/typescriptIcon.svg"
+            }
+        ],
+        "readMe": {
+            "description": "Online platform for surf trips and community events, focused on sustainable tourism and youth experiences.Developed the frontend with Next.js (TypeScript), integrated with a Strapi backend serving as CMS and PostgreSQL database. For the UI, I implemented Chakra UI, ensuring a responsive and accessible design",
+            "Development Challenges and Learning Process": "During the development of SurfWeek I faced several challenges that helped me grow as a developer. The main one was working with GraphQL combined with TanStack Query for the first time, which required me to understand how to fetch and manage server-side data efficiently. Another significant challenge was adapting to an existing codebase developed by other people: I had to quickly understand the project’s structure, previous design decisions, and also deal with deployment for the first time using Docker and containerization systems. Finally, I had to manage the dynamic nature of the CMS by handling different possible scenarios in which fields from Strapi could be missing or incorrectly filled, adding the necessary conditions to keep the frontend stable and consistent.",
+            "Conclusion": "This project was full of first-time experiences that significantly contributed to my growth as a developer. Working on a real-world product for an actual company gave me the opportunity to strengthen my technical skills and learn to adapt quickly to new tools and workflows. While there is still room for improvement, this experience allowed me to overcome gaps in my knowledge and gave me the confidence to tackle more complex projects in the future."
+        },
+        "mainImage": "/surfweek.png",
+        "desktop-image": "/surfweekD.png",
+        "mobile-image": "/surfweekM.png",
+        "live": "https://surfweek.it/"
+    },
+    {
         "title": "From Puglia Travel Blog",
         "description": "FromPuglia.com is a full-stack application developed in Nextjs. The backend is managed through the use of a CMS called Contentful and it's connected to the front-end through REST API. Application deployment is managed through Vercel",
         "tech-stack": [
