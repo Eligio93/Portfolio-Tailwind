@@ -38,13 +38,16 @@ export default function ProjectCard({ project }) {
         })}
       </div>
       <div className="mt-5 flex justify-around sm:justify-end sm:gap-5">
-        <a
-          href={project.gitHub}
-          target="_blank"
-          className="rounded-full bg-sky-500 px-3 py-2 text-sm font-bold transition-colors lg:border lg:border-sky-500 lg:bg-transparent lg:hover:bg-sky-500"
-        >
-          See Code
-        </a>
+        {project.gitHub && (
+          <a
+            href={project.gitHub}
+            target="_blank"
+            className="rounded-full bg-sky-500 px-3 py-2 text-sm font-bold transition-colors lg:border lg:border-sky-500 lg:bg-transparent lg:hover:bg-sky-500"
+          >
+            See Code
+          </a>
+        )}
+
         <a
           href={project.live}
           target="_blank"
