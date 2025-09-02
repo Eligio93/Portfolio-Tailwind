@@ -1,0 +1,90 @@
+[
+    {
+        "title": "EC Blog",
+        "description": "EcBlog is a full-stack application that includes two FrontEnds and one Backend. The two front ends are the client side, which is the actual blog open to everyone where various articles are present, and users can leave comments after registering. The other front end is the CMS side, which is reserved for blog administration where it is possible to edit, publish, feature, and delete articles and comments.Both of the FrontEnds are developed using React + Vite, the Backend using Node.js + Express and MongoDB as database",
+        "tech-stack": [
+            {
+                "name": "HTML",
+                "icon": "/htmlIcon.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "/cssIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/javascriptIcon.svg"
+            },
+            {
+                "name": "Mongo DB",
+                "icon": "/mongoDbIcon.svg"
+            },
+            {
+                "name": "Node",
+                "icon": "/nodeIcon.svg"
+            },
+            {
+                "name": "Express",
+                "icon": "/expressIcon.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/reactIcon.svg"
+            },
+            {
+                "name": "Vite",
+                "icon": "/viteIcon.svg"
+            }
+        ],
+        "mainImage": "/ecBlog.png",
+        "desktop-image": "/blogAPID.png",
+        "mobile-image": "/blogAPIM.png",
+        "readMe": {
+            "description": "EcBlog is a full-stack application that includes two front ends and one backend. The two front ends are the client side, which is the actual blog open to everyone where various articles are present, and users can leave comments after registering. The other front end is the CMS side, which is reserved for blog administration where it is possible to edit, publish, feature, and delete articles and comments.",
+            "Struggles": "The first real obstacle was understanding and not getting confused between authentication with Passport Local, used together with Passport JWT Strategy to manage authorization for various server routes and make API calls. Once I understood this mechanism, I saved the JWT token in localStorage and used a Context in React to manage the user access on the front end. I used the same strategy for both the client and the CMS, but despite everything working perfectly on the client side, I have problems with the CMS. When the page is refreshed, the user loses access even though the token is still present in localStorage. I plan to revisit this bug in the future to resolve it. Another difficulty I encountered was using Cloudinary for saving images for each post. I used this service to avoid burdening the database with multiple images, saving only the links pointing to Cloudinary instead. Lastly, I also used TinyMCE as an editor for writing the body of each post. I noticed that the editor has many features, but I decided to use it in a basic way to avoid further complicating the project.",
+            "Conclusion": "After completing this project, I finally feel like I have created something that can be used in the real world. During development, I had many ideas on how to add functionalities and other features to my application, and I learned a lot about RESTful APIs, the server, and it was very useful to review React once again. This was my first real full-stack application, and I am happy with the result, even though I would like to go back and improve its graphical appearance."
+        },
+        "gitHub": "https://github.com/Eligio93/BlogAPI",
+        "live": "https://ec-blogapi.netlify.app/"
+    },
+    {
+        "title": "Server Inventory App",
+        "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator. The app is been deployed using Railway",
+        "tech-stack": [
+            {
+                "name": "PUG",
+                "icon": "/pugIcon.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "/cssIcon.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/javascriptIcon.svg"
+            },
+            {
+                "name": "Mongo DB",
+                "icon": "/mongoDbIcon.svg"
+            },
+            {
+                "name": "Node",
+                "icon": "/nodeIcon.svg"
+            },
+            {
+                "name": "Express",
+                "icon": "/expressIcon.svg"
+            }
+        ],
+        "mainImage": "/inventoryApp.png",
+        "desktop-image": "/inventoryAppD.png",
+        "mobile-image": "/inventoryAppM.png",
+        "readMe": {
+            "description": "The server-side application is developed using Node.js and Express, utilizing MongoDB as Database. This application allows users to manage inventory and stock for their store. For the front-end is been used CSS and PUG as HTML generator. The app is been deployed using Railway",
+            "Struggles": "Certainly, the biggest challenges in the entire project were related to structuring the routes and the various controllers to handle different requests to the database. Additionally, I used PUG for the first time, which initially required a bit of a learning curve but eventually proved to be straightforward and easy to use",
+            "Conclusion": "In conclusion, I really enjoyed working on this project as it allowed me to gain more confidence in using a database and sharpened my skills with Mongoose commands. It was a rewarding experience that not only strengthened my technical abilities but also enhanced my overall understanding of backend development"
+        },
+        "gitHub": "https://github.com/Eligio93/inventory-app",
+        "live": "https://ec-inventory-app.up.railway.app/"
+    }
+]
