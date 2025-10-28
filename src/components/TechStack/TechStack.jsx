@@ -1,4 +1,3 @@
-import TechStackImage from "/TechStackImage.svg";
 import cssIcon from "/cssIcon.svg";
 import htmlIcon from "/htmlIcon.svg";
 import javascriptIcon from "/javascriptIcon.svg";
@@ -10,6 +9,7 @@ import mongoDbIcon from "/mongoDbIcon.svg";
 import nodeIcon from "/nodeIcon.svg";
 import nextJsIcon from "/nextJsIcon.svg";
 import typescripticon from "/typescriptIcon.svg";
+import postgresIcon from "/postgresIcon.svg";
 
 export default function TechStack() {
   const technologies = [
@@ -57,6 +57,7 @@ export default function TechStack() {
       name: "Git",
       icon: gitIcon,
     },
+    { name: "PostgreSQL", icon: postgresIcon },
   ];
 
   return (
